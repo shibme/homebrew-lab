@@ -5,20 +5,20 @@
 class Demo < Formula
   desc ""
   homepage "https://github.com/shibme/demo-cli"
-  version "1.0.1"
+  version "1.0.2"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/shibme/demo-cli/releases/download/v1.0.1/demo_1.0.1_darwin_arm64.zip"
-      sha256 "3c761e83a4dc59a31b857fd41c8ebb1817681c819b04c5a6379e184057cf1298"
+      url "https://github.com/shibme/demo-cli/releases/download/v1.0.2/demo_1.0.2_darwin_arm64.zip"
+      sha256 "faecaaf7f3d63c8189804f7561b29af514e3c52988341b5d7e1a18925cba2b82"
 
       def install
         bin.install "demo"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/shibme/demo-cli/releases/download/v1.0.1/demo_1.0.1_darwin_amd64.zip"
-      sha256 "ebeb84f5e9b551a8d3366c582979acde6454374394f7b19b1767cc9bff0e09a1"
+      url "https://github.com/shibme/demo-cli/releases/download/v1.0.2/demo_1.0.2_darwin_amd64.zip"
+      sha256 "79b7daeece4565ab44c720ec8e49ca46addd0162c5d598877e56843bd2f47af9"
 
       def install
         bin.install "demo"
@@ -28,16 +28,16 @@ class Demo < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/shibme/demo-cli/releases/download/v1.0.1/demo_1.0.1_linux_arm64.zip"
-      sha256 "697ac1dcb805dbcd1985a6d3ad9e9977960803c6c236fc75b38438972b6f5225"
+      url "https://github.com/shibme/demo-cli/releases/download/v1.0.2/demo_1.0.2_linux_arm64.zip"
+      sha256 "475e918c498c00159947e0d34e6b7e9cf8feca292aa225c64afd3e0e792dee46"
 
       def install
         bin.install "demo"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/shibme/demo-cli/releases/download/v1.0.1/demo_1.0.1_linux_amd64.zip"
-      sha256 "1a53420458277b3ecbaa43a0cfce4e0e16a6b050958140d4a2de196700a4b6bc"
+      url "https://github.com/shibme/demo-cli/releases/download/v1.0.2/demo_1.0.2_linux_amd64.zip"
+      sha256 "c2abc6f7667a130326c8da477d9b5f310cb5b70fbc5604b48924af1aee8fd484"
 
       def install
         bin.install "demo"
