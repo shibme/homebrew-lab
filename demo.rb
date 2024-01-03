@@ -5,20 +5,20 @@
 class Demo < Formula
   desc ""
   homepage "https://github.com/shibme/demo-cli"
-  version "1.0.2"
+  version "1.1.1"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/shibme/demo-cli/releases/download/v1.0.2/demo_1.0.2_darwin_arm64.zip"
-      sha256 "faecaaf7f3d63c8189804f7561b29af514e3c52988341b5d7e1a18925cba2b82"
+    if Hardware::CPU.intel?
+      url "https://github.com/shibme/demo-cli/releases/download/v1.1.1/demo_1.1.1_darwin_amd64.zip"
+      sha256 "f01406b8695ce7da97f73f5aa86fbc35ec92c183375bef91f85fd7830ceaf404"
 
       def install
         bin.install "demo"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/shibme/demo-cli/releases/download/v1.0.2/demo_1.0.2_darwin_amd64.zip"
-      sha256 "79b7daeece4565ab44c720ec8e49ca46addd0162c5d598877e56843bd2f47af9"
+    if Hardware::CPU.arm?
+      url "https://github.com/shibme/demo-cli/releases/download/v1.1.1/demo_1.1.1_darwin_arm64.zip"
+      sha256 "c1c3a5d196c4bc8fdb73336c1673bb1d412baec8da55932e92f0d11c840b4a40"
 
       def install
         bin.install "demo"
@@ -27,17 +27,17 @@ class Demo < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/shibme/demo-cli/releases/download/v1.0.2/demo_1.0.2_linux_arm64.zip"
-      sha256 "475e918c498c00159947e0d34e6b7e9cf8feca292aa225c64afd3e0e792dee46"
+    if Hardware::CPU.intel?
+      url "https://github.com/shibme/demo-cli/releases/download/v1.1.1/demo_1.1.1_linux_amd64.zip"
+      sha256 "694e5fd5f323c445072a1d773d70834e1220bb041ddc2bec366596cbc9388569"
 
       def install
         bin.install "demo"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/shibme/demo-cli/releases/download/v1.0.2/demo_1.0.2_linux_amd64.zip"
-      sha256 "c2abc6f7667a130326c8da477d9b5f310cb5b70fbc5604b48924af1aee8fd484"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/shibme/demo-cli/releases/download/v1.1.1/demo_1.1.1_linux_arm64.zip"
+      sha256 "70ca27e8dc05c75681a0971681117d2b3dca87053abe3feebfa7bf5f3023a5d3"
 
       def install
         bin.install "demo"
