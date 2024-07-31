@@ -5,21 +5,21 @@
 class Randgen < Formula
   desc "RandGen is a simple CLI tool to generate random files of a given size."
   homepage "https://dev.shib.me/randgen"
-  version "0.3.4"
+  version "0.3.5"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/shibme/randgen/releases/download/v0.3.4/randgen_darwin_amd64.zip"
-      sha256 "31c1922c689860761a73ea30390d8dd2a94baaa3f5daa16fa825445160275719"
+      url "https://github.com/shibme/randgen/releases/download/v0.3.5/randgen_darwin_amd64.zip"
+      sha256 "8a3cf9e81dbd09bac7dd514a1ae0441151fa862362b123c4f31056f52c940ee1"
 
       def install
         bin.install "randgen"
       end
     end
     on_arm do
-      url "https://github.com/shibme/randgen/releases/download/v0.3.4/randgen_darwin_arm64.zip"
-      sha256 "11b3bbf31967a39c0c8ac0c63275e77b4bf908103c1ee73767abe28db6262d8f"
+      url "https://github.com/shibme/randgen/releases/download/v0.3.5/randgen_darwin_arm64.zip"
+      sha256 "400b9ca30f75832ba7dae0d11341815b7962fbddc1c683d8755a79ab169675b9"
 
       def install
         bin.install "randgen"
@@ -30,8 +30,8 @@ class Randgen < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/shibme/randgen/releases/download/v0.3.4/randgen_linux_amd64.zip"
-        sha256 "d343b259d989b3366857763e6c528b22147137f36e2940e4a900964a56cfda5c"
+        url "https://github.com/shibme/randgen/releases/download/v0.3.5/randgen_linux_amd64.zip"
+        sha256 "3cb4ac05cc0bebca4951b44f51efbbdaa2d79d3c05737e31a1264b7a15df99b9"
 
         def install
           bin.install "randgen"
@@ -40,8 +40,8 @@ class Randgen < Formula
     end
     on_arm do
       if !Hardware::CPU.is_64_bit?
-        url "https://github.com/shibme/randgen/releases/download/v0.3.4/randgen_linux_arm.zip"
-        sha256 "0cae84ce1b92f198ed4afdcdced45d593bcef0474661286346d32d0a686339b9"
+        url "https://github.com/shibme/randgen/releases/download/v0.3.5/randgen_linux_arm.zip"
+        sha256 "02df9b221b90fe27400b7fe2699ece431542307b46b4df382893457c9c374074"
 
         def install
           bin.install "randgen"
@@ -50,8 +50,8 @@ class Randgen < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/shibme/randgen/releases/download/v0.3.4/randgen_linux_arm64.zip"
-        sha256 "73aef3248456ef66edddf61a39298a82f36e4e8f6a9ea711e24ee80ecf479fec"
+        url "https://github.com/shibme/randgen/releases/download/v0.3.5/randgen_linux_arm64.zip"
+        sha256 "c1d379b67fa9a88379a0eebcb23e538e103bd38340465adb3c5d5f677111ce98"
 
         def install
           bin.install "randgen"
